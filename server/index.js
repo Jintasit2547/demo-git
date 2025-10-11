@@ -7,7 +7,6 @@ import session from "express-session";
 import cors from "cors";
 import "./googleAuth2/auth.js";
 
-
 dotenv.config();
 
 const app = express();
