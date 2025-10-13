@@ -1,34 +1,19 @@
-# Logs
-logs
-*.log
+Environment variables - DO NOT UPLOAD!
+.env
+/server/.env
+
+Dependencies - These can be reinstalled from package.json
+/node_modules
+/server/node_modules
+
+Vite build output folder
+/dist
+
+Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+System files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# Environment variables
-.env          
-.env.local
-.env.development.local
-.env.production.local
-
-# Misc
-*.bak
-*.tmp
+Thumbs.db

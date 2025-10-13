@@ -1,0 +1,87 @@
+/* ====== ส่วนพื้นหลัง (background ทั้งจอ) ====== */
+.login-container {
+  height: 100vh;                /* สูงเต็มหน้าจอ (vh = viewport height) */
+  width: 100vw;                 /* กว้างเต็มหน้าจอ (vw = viewport width) */
+  display: flex;                /* ใช้ flexbox เพื่อจัดตำแหน่ง */
+  justify-content: center;      /* จัดให้อยู่ตรงกลางแนวนอน */
+  align-items: center;          /* จัดให้อยู่ตรงกลางแนวตั้ง */
+  background-color: #FFC107;    /* สีพื้นหลังเหลืองสด */
+}
+
+/* ====== กล่อง login สีขาวตรงกลาง ====== */
+.login-box {
+  background-color: white;                       /* สีพื้นของกล่องเป็นสีขาว */
+  padding: 40px;                                 /* ระยะห่างขอบในกล่อง */
+  border-radius: 12px;                           /* มุมโค้งนิด ๆ */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);   /* เงาให้ดูนูนขึ้น */
+  width: 350px;                                  /* ความกว้างกล่อง */
+  text-align: center;                            /* จัดข้อความกลางแนวนอน */
+}
+
+/* ====== หัวข้อ StudentPort.com ====== */
+.title {
+  font-size: 28px;            /* ขนาดตัวอักษร */
+  font-weight: bold;          /* ตัวหนา */
+  margin-bottom: 20px;        /* เว้นระยะด้านล่าง */
+  color: #1e1e1e;             /* สีดำเทา */
+}
+
+/* ====== ช่องกรอก email / password ====== */
+.input-field {
+  width: 100%;                /* กว้างเท่ากล่อง login */
+  padding: 10px;              /* ระยะห่างในช่อง */
+  margin: 10px 0;             /* เว้นช่องห่างระหว่าง input */
+  border-radius: 20px;        /* ขอบโค้งมน */
+  border: 1px solid #ccc;     /* เส้นขอบสีเทาอ่อน */
+  outline: none;              /* เอาเส้นขอบฟ้าเวลา focus ออก */
+}
+
+/* ====== ลิงก์ forgot / change password ====== */
+.link-row {
+  display: flex;              /* วางในแถวเดียวกัน */
+  justify-content: space-between;  /* แยกซ้าย-ขวา */
+  margin-bottom: 10px;        /* เว้นด้านล่างนิดหน่อย */
+}
+
+.link {
+  color: #1e40af;             /* สีฟ้าเข้ม */
+  text-decoration: none;      /* เอาเส้นใต้ลิงก์ออก */
+  font-size: 14px;
+}
+.link:hover {
+  text-decoration: underline; /* เวลาชี้แล้วให้มีเส้นใต้ */
+}
+
+/* ====== ปุ่ม Login ====== */
+.login-btn {
+  background-color: #1e3a8a;  /* สีฟ้าเข้ม */
+  color: white;               /* ตัวหนังสือขาว */
+  border: none;               /* ไม่มีขอบ */
+  padding: 10px 20px;         /* ระยะห่างรอบข้อความ */
+  border-radius: 20px;        /* ขอบมน */
+  cursor: pointer;            /* เม้าส์เป็นรูปมือ */
+  width: 100%;                /* กว้างเต็ม */
+  margin-bottom: 10px;
+}
+
+/* ====== ปุ่ม Login with Google ====== */
+.google-btn {
+  background-color: white;    /* สีพื้นขาว */
+  color: black;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* ====== เส้นแบ่งระหว่าง login ปกติกับ Google ====== */
+.divider {
+  margin: 10px 0;             /* เว้นช่องว่าง */
+}
+
+/* ====== ข้อความด้านล่าง (Sign up) ====== */
+.signup-text {
+  font-size: 14px;
+}
